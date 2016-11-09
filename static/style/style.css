@@ -1,0 +1,7 @@
+table.table-with-border {
+    border-collapse: collapse;
+}
+
+.table-with-border th, .table-with-border td {
+    border: 1px solid #000;
+}

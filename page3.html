@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+</head>
+<body>
+    <header><a href="index.html">На главную</a></header>
+    <table cellpadding="15">
+        <tr>
+            <td>
+                <form name="comp_order" action="http://google.com">
+                    <fieldset>
+                        <table cellpadding="5">
+                            <thead>
+                                <tr>
+                                    <td colspan="2"><h2>Заказ компьютера</h2></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Имя</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Фамилия</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Возраст</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Вид компьютера</td>
+                                    <td>
+                                        <input type="radio" name="computer" value="Notebook">Notebook<br>
+                                        <input type="radio" name="computer" value="Desktop">Desktop
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Процессор</td>
+                                    <td>
+                                        <select style="width: 100%">
+                                            <option>Intel</option>
+                                            <option>AMD</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Стоимость процессора</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top">Оперативная память</td>
+                                    <td>
+                                        <input type="radio" name="ram" value="256">256 Мб, 500 руб<br>
+                                        <input type="radio" name="ram" value="512">512 Мб, 800 руб<br>
+                                        <input type="radio" name="ram" value="1024">1024 Мб, 1200 руб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="reset" value="Очистить"></td>
+                                    <td><input type="submit" value="Отчет"></td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+            <td valign="top">
+                <form name="user_register" action="http://ya.ru">
+                    <table cellpadding="5">
+                        <thead>
+                            <tr>
+                                <td colspan="2"><h2>Регистрация пользователей</h2></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Имя</td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Пароль</td>
+                                <td><input type="password"></td>
+                            </tr>
+                            <tr>
+                                <td>Подтверждение пароля</td>
+                                <td><input type="password"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" value="Расчет"></td>
+                                <td><input type="reset" value="Очистить"></td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form name="user" action="http://www.google.com" enctype="multipart/form-data">
+                    <fieldset>
+                        <table cellpadding="5">
+                            <thead>
+                                <tr>
+                                    <td colspan="2"><h2>Посетитель:</h2></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Введите свою фамилию</td>
+                                    <td><input type="text" value="Иванов"></td>
+                                    <td colspan="2" rowspan="3"><textarea style="width: 100%; height: 100%"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>Введите свое имя</td>
+                                    <td><input type="text" value="Иван"></td>
+                                </tr>
+                                <tr>
+                                    <td>Введите Отчество</td>
+                                    <td><input type="text" value="Иванович"></td>
+                                </tr>
+                                <tr>
+                                    <td>Выберите файл</td>
+                                    <td><input type="file"></td>
+                                    <td>
+                                        <label>Email: <input type="email"></label>
+                                    </td>
+                                    <td align="right"><input type="submit" value="Отправить"><input type="reset" value="Сброс"></td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

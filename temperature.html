@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Температура</title>
+    <link rel="stylesheet" type="text/css" href="static/style/style.css" />
+</head>
+<body onload="getTempRange()">
+    <header><a href="index.html">На главную</a></header>
+    <form onsubmit="calcTemp(); return false;">
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td>Введите градусы по Фаренгейту:</td>
+                    <td><input id="degrees"></td>
+                    <td><input type="submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div id="result"></div>
+
+    <h3>Таблица соотношений градусов по Фаренгейту к градусам по Цельсию</h3>
+    <div>
+        <table class="table-with-border">
+            <colgroup span="2">
+                <col span="2" width="130">
+            </colgroup>
+            <thead></thead>
+            <tbody id="tempTableBody">
+                <tr>
+                    <th>По Фаренгейту</th>
+                    <th>По Цельсию</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="static/js/temp.js"></script>
+</body>
+</html>

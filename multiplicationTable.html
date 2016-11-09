@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица умножения</title>
+    <link rel="stylesheet" type="text/css" href="static/style/style.css" />
+</head>
+<body onload="createMultiplicationTable()">
+    <header><a href="index.html">На главную</a></header>
+    <table class="table-with-border">
+        <thead>
+            <tr>
+                <th colspan="5">Таблица умножения</th>
+            </tr>
+        </thead>
+        <colgroup span="5">
+            <col span="5" width="130">
+        </colgroup>
+        <tbody>
+            <tr>
+                <td id="number1"></td>
+                <td id="number2"></td>
+                <td id="number3"></td>
+                <td id="number4"></td>
+                <td id="number5"></td>
+            </tr>
+            <tr>
+                <td id="number6"></td>
+                <td id="number7"></td>
+                <td id="number8"></td>
+                <td id="number9"></td>
+                <td id="number10"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <form onsubmit="getMaxNumberByModule(); return false;">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" align="left"><h3>Нахождение наибольшего числа по модулю</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Введите числа через запятую:</td>
+                <td><input id="array"></td>
+                <td><input type="submit"></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <div id="resultOfMaxNumber"></div>
+
+    <form onsubmit="symbolsReplacing(); return false;">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" align="left"><h3>Замена символа в тексте</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Введите строку:</td>
+                <td><input id="string"></td>
+            </tr>
+            <tr>
+                <td>Введите символ, который необходимо заменить:</td>
+                <td><input id="toReplace"></td>
+            </tr>
+            <tr>
+                <td>Введите символ, на который заменить:</td>
+                <td><input id="replacingSymbol"></td>
+            </tr>
+            <tr>
+                <td align="right"><input type="submit"></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <div id="resultOfString"></div>
+
+    <script src="static/js/temp.js"></script>
+</body>
+</html>
